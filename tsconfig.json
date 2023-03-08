@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"target": "es5" /**指定ECMAScript目标版本**/,
+		"jsx": "react" /**支持JSX**/,
+		"module": "esnext" /**指定生成哪个模块系统代码**/,
+		"allowJs": true /**允许编译js文件**/,
+		"outDir": "build" /**编译输出目录**/,
+		"strict": true /**启用所有严格类型检查选项**/,
+		"noImplicitAny": false /**在表达式和声明上有隐含的any类型时报错**/,
+		"skipLibCheck": true /**忽略所有的声明文件的类型检查**/,
+		"forceConsistentCasingInFileNames": true /**禁止对同一个文件的不一致的引用**/,
+		"lib": [
+			"dom",
+			"es5",
+			"es2015.core",
+			"es2015.promise",
+			"es2015.collection",
+			"es2016.array.include",
+			"es2017.string",
+			"es2017.object",
+			"es2018.promise",
+			"es2015.reflect",
+			"es2017.typedarrays",
+			"dom.iterable",
+			"esnext"
+		],
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true
+	},
+	"include": [/**指定编译目录**/ "src"]
+}
